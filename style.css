@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+     --font1: Verdana, Geneva, Tahoma, sans-serif;
+     --font2: 'Passion One', cursive;
+     --font3: 'Sriracha', cursive;
+}
+
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilos para o HTML e o corpo da página */
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para os títulos no cabeçalho */
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 8vw;
+}
+
+/* Estilos para os parágrafos no cabeçalho */
+header > p {
+    padding-bottom: 50px;
+}
+
+/* Estilos para links no cabeçalho e no rodapé */
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Efeitos de hover para links no cabeçalho e no rodapé */
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10%;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 2vw;
+}
+section > p {
+    padding-bottom: 2em;
+}
+
+/* Estilos para seções normais */
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para seções de imagem */
+section.imagem {
+    background-color: black;
+    color: white;
+    box-shadow:  inset 6px 6px 13px 0px rgba(0, 0, 0, 0.575);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.644);
+    text-shadow: 1px 1px 0px black;
+    color: white;
+    width: auto;
+    background-size: cover;
+    background-position: right;
+}
+section#img01 {
+    background-image: url(Imagens/imgtela1.jpg);
+    background-position: center center;
+}
+section#img02 {
+    background-image: url(Imagens/imgtela2.jpg);
+    background-position: center center;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
